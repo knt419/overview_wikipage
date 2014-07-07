@@ -1,3 +1,4 @@
 = overview_wikipage
 
-Description goes here
+A redmine plugin to show the wikipage to overview page.
+This plugin displays the wikipage that has the same name as a project_id.
