@@ -1,3 +1,3 @@
 = overview_wikipage
 
-Description goes here
+Overview Wikipage is a Redmine plugin to show a wikipage to the project overview page.
