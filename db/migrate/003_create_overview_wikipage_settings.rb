@@ -4,6 +4,5 @@ class CreateOverviewWikipageSettings < ActiveRecord::Migration
       t.belongs_to :project, index: true, foreign_key: true
       t.string :wikipage
     end
-    add_index :overview_wikipage_settings, :project_id
   end
 end
