@@ -1,5 +1,6 @@
 require 'redmine'
 require 'overview_wikipage_hook_listener'
+require 'project_patch'
 
 Redmine::Plugin.register :overview_wikipage do
   name 'Overview Wikipage plugin'
