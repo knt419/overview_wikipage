@@ -6,9 +6,12 @@ module OverviewWikipage
 
     included do
       unloadable
-      has_one :overview_wikipage_settings, dependent: :destroy
-      safe_attributes :overview_wikipage_settings_attributes
-      accepts_nested_attributes_for :overview_wikipage_settings
+      has_one :overview_page
+      accepts_nested_attributes_for :overview_page
+    end
+
+    def overviewpagename
+        overview_page.try :pagename
     end
   end
 end
