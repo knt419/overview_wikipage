@@ -1,7 +1,8 @@
-<% if !Wiki.find_page(@project.overview_page.pagename, :project => @project).nil? then %>
+<% @overview_page = OverviewPage.init(@project.id) %>
+<% if !Wiki.find_page(@overview_page.pagename, :project => @project).nil? then %>
 <div class="box">
 <p>
-  <%= textilizable(@project.wiki.find_page(@project.overview_page.pagename).text).html_safe %>
+  <%= textilizable(@project.wiki.find_page(@overview_page.pagename).text).html_safe %>
 </p>
 </div>
 <% end %>
