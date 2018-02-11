@@ -1,5 +1,4 @@
 <p>
-  <% @overview_page = OverviewPage.init(@project.id) %>
   <label for='pagename'>overivewpage</label>
-  <%= form.text_field(@overivew_page.pagename) %>
+  <%= text_field_tag 'project[overview_page_attributes][pagename]', @project.overviewpagename %>
 </p>
