@@ -12,7 +12,7 @@ module OverviewWikipage
     end
 
     def overviewpagename
-        overview_page.try :pagename
+      overview_page.try :pagename
     end
   end
 end

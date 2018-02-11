@@ -10,7 +10,7 @@ Redmine::Plugin.register :overview_wikipage do
   url 'https://github.com/knt419/overview_wikipage'
   author_url 'https://github.com/knt419'
 
-  settings :default => {
-    'wikipage_name' => 'overview',
-  }, :partial => 'settings/overview_wikipage_settings'
+  settings default: {
+    wikipage_name: 'overview'
+  }, partial: 'settings/overview_wikipage_settings'
 end
