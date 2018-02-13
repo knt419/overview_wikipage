@@ -1,4 +1,4 @@
 <p>
-  <label for='pagename'>overivewpage</label>
-  <%= text_field_tag 'project[overview_page_attributes][pagename]', @project.overviewpagename %>
+  <%= label_tag 'project[overview_page_attributes][pagename]', 'wikipage to show' %>
+  <%= text_field_tag 'project[overview_page_attributes][pagename]', @project.overview_page.pagename %>
 </p>

@@ -10,10 +10,6 @@ module OverviewWikipage
       safe_attributes :overview_page_attributes
       accepts_nested_attributes_for :overview_page
     end
-
-    def overviewpagename
-      overview_page.try :pagename
-    end
   end
 end
 
