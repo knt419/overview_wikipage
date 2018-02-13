@@ -1,7 +1,4 @@
 <p>
-  <table>
-  <tr><td> Wikipage </td><td>
+  <%= label_tag 'settings[pagename]', I18n.t(:label_default_setting) %>
   <%= text_field_tag 'settings[pagename]', @settings['pagename'] %>
-  </td></tr>
-  </table>
 </p>
