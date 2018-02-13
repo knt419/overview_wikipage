@@ -4,10 +4,10 @@
   <%= textilizable(@project.wiki.find_page(@project.overview_page.pagename).text).html_safe %>
 </p>
 </div>
-<% elsif !Wiki.find_page(@settings['pagename'], :project => @project).nil? then %>
+<% elsif !Setting.plugin_overview_wikipage['pagename'].empty? then %>
 <div class="box">
 <p>
-  <%= textilizable(@project.wiki.find_page(@settings['pagename']).text).html_safe %>
+  <%= textilizable(@project.wiki.find_page(Setting.plugin_overview_wikipage['pagename']).text).html_safe %>
 </p>
 </div>
 <% end %>
