@@ -1,5 +1,4 @@
 # English strings go here for Rails i18n
 en:
-  # my_label: "My label"
   label_default_setting: "Default wikipage to show in project overview"
   label_per_project_setting: "Wikipage to show in project overview"

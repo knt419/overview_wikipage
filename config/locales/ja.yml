@@ -1,3 +1,4 @@
+# Japanese strings go here for Rails i18n
 ja:
   label_default_setting: "概要ページに表示するデフォルトページ"
   label_per_project_setting: "概要ページに表示するページ"

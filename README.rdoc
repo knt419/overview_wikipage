@@ -2,9 +2,9 @@
 
 Overview Wikipage is a Redmine plugin to show a wikipage in the project overview page.
 
-= Install
+= Installation
 
 1. copy the plugin to Redmine plugins folder
 2. migrate database by a following command
-  $ bundle exec rake redmine:plugins:migrate RAILS_ENV=production
+    $ bundle exec rake redmine:plugins:migrate RAILS_ENV=production
 3. restart Redmine
