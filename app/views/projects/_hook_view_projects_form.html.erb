@@ -1,4 +1,4 @@
 <p>
   <%= label_tag 'project[overview_page_attributes][pagename]', I18n.t(:label_per_project_setting) %>
-  <%= text_field_tag 'project[overview_page_attributes][pagename]', @project.overview_page.pagename %>
+  <%= text_field_tag 'project[overview_page_attributes][pagename]', @project.try(:overview_page).try(:pagename) %>
 </p>

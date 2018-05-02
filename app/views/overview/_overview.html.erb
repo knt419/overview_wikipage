@@ -1,10 +1,10 @@
-<% if !@project.overview_page.pagename.empty? then %>
+<% if @project.try(:overview_page).try(:pagename).present? then %>
 <div class="box">
 <p>
   <%= textilizable(@project.wiki.find_page(@project.overview_page.pagename).text).html_safe %>
 </p>
 </div>
-<% elsif !Setting.plugin_overview_wikipage['pagename'].empty? then %>
+<% elsif Setting.plugin_overview_wikipage['pagename'].present? then %>
 <div class="box">
 <p>
   <%= textilizable(@project.wiki.find_page(Setting.plugin_overview_wikipage['pagename']).text).html_safe %>
