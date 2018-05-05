@@ -4,6 +4,5 @@ class CreateOverviewPages < ActiveRecord::Migration
       t.belongs_to :project, index: true, foreign_key: true
       t.string :pagename
     end
-    add_index :overview_pages, :project_id
   end
 end
