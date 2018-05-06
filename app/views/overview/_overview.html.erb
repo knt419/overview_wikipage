@@ -1,4 +1,4 @@
-<% wikipage = @project.try(:overview_page).try(:pagename).presence || Setting.plugin_overview_wikipage['pagename'] %>
+<% wikipage = @project.try(:overview_page_pagename).presence || Setting.plugin_overview_wikipage['pagename'] %>
 <% if wikipage.present? && @project.wiki.find_page(wikipage).present? %>
 <div class="box">
 <p>
